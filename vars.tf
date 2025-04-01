@@ -25,7 +25,7 @@ variable "s3_bucket_name" {
 variable "ami_id" {
     description = "The AMI ID for the EC2 instance"
     type        = string
-    default     = "ami-0fd55e41158603b7e"
+    default     = "ami-0d866da98d63e2b42"
 }
 
 variable "instance_type" {
