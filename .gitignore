@@ -5,3 +5,4 @@ ark-server-key.pub
 .terraform/
 .terraform.lock.hcl
 terraform.tfvars
+.terraform.tfstate.lock.info
