@@ -42,6 +42,8 @@ resource "aws_instance" "ark_server" {
   user_data = <<-EOF
               #!/bin/bash
               sudo apt update && sudo apt install -y steamcmd awscli
+              sudo add-apt-repository multiverse; sudo dpkg --add-architecture i386; sudo apt update
+              sudo apt install steamcmd
               mkdir -p /home/ubuntu/ark-server
               cd /home/ubuntu/ark-server
               steamcmd +login anonymous +force_install_dir /home/ubuntu/ark-server +app_update 376030 validate +quit
